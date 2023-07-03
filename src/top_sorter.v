@@ -40,7 +40,6 @@ module top_sorter(clk,rst_n,inp,out);
     assign out_t[1:0]=out_s_pipe[1:0];
     assign out_t[7:6]=out_s_pipe[7:6];
 
-
     always @(posedge clk) begin
         if(!rst_n)
             out_t_pipe<=0;
