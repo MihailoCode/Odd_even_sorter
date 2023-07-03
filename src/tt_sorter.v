@@ -12,8 +12,6 @@ module tt_um_sorter (
 assign uio_oe = 0;
 assign uio_out= 0;
 
-wire [7:0] led;
-
 top_sorter tt_sorter(.clk(clk),
                      .rst_n(rst_n),
                      .inp(ui_in),
