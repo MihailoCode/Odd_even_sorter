@@ -8,7 +8,7 @@ project:
   source_files:        
     - tt_sorter.v
     - top_sorter.v
-    - sorter.v
+    - swap_cell.v
   top_module:  "tt_um_sorter"      # put the name of your top module here, make it unique by prepending your github username
 # How many tiles your design occupies? A single tile is about 167x108 uM.
 # Before changing this, please reach out to us on discord to discuss your design.
@@ -23,9 +23,9 @@ yaml_version: 4
 # Here is a great example: https://github.com/davidsiaw/tt02-davidsiaw-stackcalc/blob/38c5647f83aad2aec675d566aa3d67b98f0aac81/info.yaml
 documentation: 
   author:       "Vasitito"
-  title:        "Bitonic sorter"
+  title:        "Odd even sorter"
   language:     "Verilog"
-  description:  "A bitonic sorter of four 2-bit values"
+  description:  "An odd even sorter of four 2-bit values"
 
 # Longer description of how the project works. You can use standard markdown format.
   how_it_works: |

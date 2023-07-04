@@ -4,7 +4,11 @@ input [1:0] inpB;
 output [1:0] H;
 output [1:0] L;
 
-assign H=(inpA>inpB)?inpA:inpB;
-assign L=(inpA>inpB)?inpB:inpA;
+wire en;
+
+assign en=(inpA>inpB);
+
+assign H=(en)?inpA:inpB;
+assign L=(en)?inpB:inpA;
 
 endmodule
