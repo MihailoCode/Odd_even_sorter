@@ -3,7 +3,7 @@
 #  An odd even sorter
 This repository contains the implementation of an odd even sorter. This sorter takes four 2-bit numbers and sorts them appropriately to the output signals. 
 <p align="center">
-<img src="https://github.com/Vasitito/Bitonic_sorter/assets/91189945/9d526fb8-6fd3-42f2-8ce9-4b05b6fd05ec">
+<img src="https://github.com/Vasitito/Odd_even_sorter/assets/91189945/ab89bf50-788d-492a-9d99-265c0230bf57">
 </p>
 <p align = "center">
     <b>Figure 1:</b> The implementation of the sorter and the internal architecture of the swap cell
@@ -23,4 +23,3 @@ The figure 1 depicts the implementation of the odd even sorter and the internal 
 |  Out2   |      uo_out[3:2]       |
 |  Out3   |      uo_out[5:4]       |
 |  Out4   |      uo_out[7:6]       |
-
