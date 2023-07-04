@@ -29,11 +29,11 @@ documentation:
 
 # Longer description of how the project works. You can use standard markdown format.
   how_it_works: |
-    A bitonic sorter of four 2-bit values. The design was tested through questasim.
+    The sorter takes the inputs from ui_in[7:0] signals and rearranges them properly to uo_out[7:0] signals after they pass from the four internal pipeline registers. 
 
 # Instructions on how someone could test your project, include things like what buttons do what and how to set the clock if needed
   how_to_test:  |
-      Connect a clock for the internal registers and use the inputs in order to be sorted. 
+      Connect a clock for the internal registers and use the inputs ui_in[7:0] to assign the values to the design. The sorted values are provided through uo_out[7:0] signals 
 # A description of what the inputs do (e.g. red button, SPI CLK, SPI MOSI, etc).
   inputs:
     - I0/Number1[0]
@@ -66,9 +66,9 @@ documentation:
     - none
     - none
 # The following fields are optional
-  tag:          "test"      # comma separated list of tags: test, encryption, experiment, clock, animation, utility, industrial, pwm, fpga, alu, microprocessor, risc, riscv, sensor, signal generator, fft, filter, music, bcd, sound, serial, timer, random number generator, calculator, decoder, counter, puzzle, multiplier, game, oscillator,
+  tag:          "sorter"      # comma separated list of tags: test, encryption, experiment, clock, animation, utility, industrial, pwm, fpga, alu, microprocessor, risc, riscv, sensor, signal generator, fft, filter, music, bcd, sound, serial, timer, random number generator, calculator, decoder, counter, puzzle, multiplier, game, oscillator,
   external_hw:  ""      # Describe any external hardware needed
-  discord:      ""      # Your discord handle, used for communication and automatically assigning tapeout role after a submission
+  discord:      "vtitopou"      # Your discord handle, used for communication and automatically assigning tapeout role after a submission
   doc_link:     ""      # URL to longer form documentation, eg the README.md in your repository
   clock_hz:     25 000 000       # Clock frequency in Hz (if required)
   picture:      ""      # relative path to a picture in your repository
