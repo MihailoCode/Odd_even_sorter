@@ -1,7 +1,7 @@
 ![](../../workflows/gds/badge.svg) ![](../../workflows/docs/badge.svg)
 
 #  An odd even sorter
-This repository contains the implementation of an odd even sorter. This sorter takes four 2-bit numbers and sorts them appropriately to the output signals. 
+This repository contains the implementation of an odd even sorter in Verilog. This sorter takes four 2-bit numbers and sorts them appropriately to the output signals. 
 <p align="center">
 <img src=./figures/figure1.png>
 </p>
