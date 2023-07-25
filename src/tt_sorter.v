@@ -9,26 +9,12 @@ module tt_um_sorter (
     input  wire       rst_n
 );
 
-reg [7:0] ui_in_reg_1;
-reg [7:0] ui_in_reg_2;
-
-always @(posedge clk) begin
-    if(!rst_n) begin
-        ui_in_reg_1<=0;
-        ui_in_reg_2<=0;
-    end
-    else begin
-        ui_in_reg_1<=ui_in;
-        ui_in_reg_2<=ui_in_reg_1; 
-    end
-end
-
 assign uio_oe = 0;
 assign uio_out= 0;
 
 top_sorter tt_sorter(.clk(clk),
                      .rst_n(rst_n),
-                     .inp(ui_in_reg_2),
+                     .inp(ui_in),
                      .out(uo_out));
 
 endmodule
