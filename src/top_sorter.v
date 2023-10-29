@@ -4,8 +4,9 @@ module top_sorter(clk,rst_n,inp,out);
     input [7:0] inp;
     output [7:0] out;
 
-    assign out[7:1]=6'b0000000;
-    assign out[0]=(inp[0]&&inp[1])||(inp[2]&&inp[3]);
+    assign inp[7:4]=4'b0011;
+    assign inp[3:0]=4'b0010;
+    assign out=inp[4:4]*inp[3:0];
 
    
 
