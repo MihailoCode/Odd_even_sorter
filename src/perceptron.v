@@ -15,7 +15,7 @@ output [7:0] out
 
   always@(posedge clk)
     begin
-      assign out<=in[0]*weight0+in[1]*weight1+in[2]*weight2+in[3]*weight3+in[4]*weight4+in[5]*weight5+in[6]*weight6+in[7]*weight7+bias;
+      out<=in[0]*weight0+in[1]*weight1+in[2]*weight2+in[3]*weight3+in[4]*weight4+in[5]*weight5+in[6]*weight6+in[7]*weight7+bias;
     end
 
 
