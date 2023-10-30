@@ -9,14 +9,25 @@ module tt_um_network(
     input  wire       rst_n     // reset_n - low to reset
 );
 
-    perceptron p11(ui_in,clk,8'd2,8'd4,8'd2,8'd1,8'd5,8'd2,8'd2,8'd2,8'd0,uo_out[0]);
-    perceptron p12(ui_in,clk,8'd1,8'd2,8'd3,8'd4,8'd2,8'd2,8'd2,8'd1,8'd0,uo_out[1]);
-    perceptron p13(ui_in,clk,8'd1,8'd2,8'd4,8'd2,8'd1,8'd5,8'd2,8'd2,8'd0,uo_out[2]);
-    perceptron p14(ui_in,clk,8'd1,8'd4,8'd2,8'd5,8'd2,8'd3,8'd3,8'd1,8'd0,uo_out[3]);
-    perceptron p15(ui_in,clk,8'd1,8'd2,8'd2,8'd3,8'd1,8'd2,8'd2,8'd2,8'd0,uo_out[4]);
-    perceptron p16(ui_in,clk,8'd3,8'd3,8'd3,8'd3,8'd2,8'd2,8'd2,8'd2,8'd0,uo_out[5]);
-    perceptron p17(ui_in,clk,8'd4,8'd3,8'd2,8'd1,8'd2,8'd2,8'd3,8'd3,8'd0,uo_out[6]);
-    perceptron p18(ui_in,clk,8'd4,8'd4,8'd1,8'd1,8'd2,8'd2,8'd3,8'd4,8'd0,uo_out[7]);
+    wire [7:0] aux1,aux2,aux3,aux4,aux5,aux6,aux7,aux8;
+    
+    perceptron p11(ui_in,clk,8'd2,8'd4,8'd2,8'd1,8'd5,8'd2,8'd2,8'd2,8'd0,aux1);
+    perceptron p12(ui_in,clk,8'd1,8'd2,8'd3,8'd4,8'd2,8'd2,8'd2,8'd1,8'd0,aux2);
+    perceptron p13(ui_in,clk,8'd1,8'd2,8'd4,8'd2,8'd1,8'd5,8'd2,8'd2,8'd0,aux3);
+    perceptron p14(ui_in,clk,8'd1,8'd4,8'd2,8'd5,8'd2,8'd3,8'd3,8'd1,8'd0,aux4);
+    perceptron p15(ui_in,clk,8'd1,8'd2,8'd2,8'd3,8'd1,8'd2,8'd2,8'd2,8'd0,aux5);
+    perceptron p16(ui_in,clk,8'd3,8'd3,8'd3,8'd3,8'd2,8'd2,8'd2,8'd2,8'd0,aux6);
+    perceptron p17(ui_in,clk,8'd4,8'd3,8'd2,8'd1,8'd2,8'd2,8'd3,8'd3,8'd0,aux7);
+    perceptron p18(ui_in,clk,8'd4,8'd4,8'd1,8'd1,8'd2,8'd2,8'd3,8'd4,8'd0,aux8);
+
+    activation a1(aux1,8'd2,uo_out[0]);
+    activation a1(aux2,8'd2,uo_out[1]);
+    activation a1(aux3,8'd2,uo_out[2]);
+    activation a1(aux4,8'd2,uo_out[3]);
+    activation a1(aux5,8'd2,uo_out[4]);
+    activation a1(aux6,8'd2,uo_out[5]);
+    activation a1(aux7,8'd2,uo_out[6]);
+    activation a1(aux8,8'd2,uo_out[7]);
 
 
 endmodule
