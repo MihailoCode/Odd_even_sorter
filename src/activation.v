@@ -2,7 +2,7 @@ module activation(
 
     input [7:0] in,
     input [7:0] treshold,
-    output out
+    output reg out
 );
 
 always@(*)
