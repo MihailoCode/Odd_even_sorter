@@ -21,13 +21,13 @@ module tt_um_network(
     perceptron p18(ui_in,clk,8'd4,8'd4,8'd1,8'd1,8'd2,8'd2,8'd3,8'd4,8'd0,aux8);
 
     activation a1(aux1,8'd2,uo_out[0]);
-    activation a1(aux2,8'd2,uo_out[1]);
-    activation a1(aux3,8'd2,uo_out[2]);
-    activation a1(aux4,8'd2,uo_out[3]);
-    activation a1(aux5,8'd2,uo_out[4]);
-    activation a1(aux6,8'd2,uo_out[5]);
-    activation a1(aux7,8'd2,uo_out[6]);
-    activation a1(aux8,8'd2,uo_out[7]);
+    activation a2(aux2,8'd2,uo_out[1]);
+    activation a3(aux3,8'd2,uo_out[2]);
+    activation a4(aux4,8'd2,uo_out[3]);
+    activation a5(aux5,8'd2,uo_out[4]);
+    activation a6(aux6,8'd2,uo_out[5]);
+    activation a7(aux7,8'd2,uo_out[6]);
+    activation a8(aux8,8'd2,uo_out[7]);
 
 
 endmodule
