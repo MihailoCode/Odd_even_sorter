@@ -10,7 +10,7 @@ input [7:0] weight5,
 input [7:0] weight6,
 input [7:0] weight7,
 input [7:0] bias,
-output [7:0] out
+output reg [7:0] out
 );
 
   always@(posedge clk)
