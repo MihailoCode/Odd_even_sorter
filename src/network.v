@@ -10,6 +10,8 @@ module tt_um_network(
 );
 
     wire [7:0] aux1,aux2,aux3,aux4,aux5,aux6,aux7,aux8;
+
+    assign uio_ue=8'b00000000;
     
     perceptron p11(ui_in,clk,8'd2,8'd4,8'd2,8'd1,8'd5,8'd2,8'd2,8'd2,8'd0,aux1);
     perceptron p12(ui_in,clk,8'd1,8'd2,8'd3,8'd4,8'd2,8'd2,8'd2,8'd1,8'd0,aux2);
