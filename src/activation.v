@@ -10,11 +10,11 @@ begin
 
     if(in>treshold)
     begin
-        out<=1'b1;
+        out=1'b1;
     end
     else
     begin
-        out<=1'b0;
+        out=1'b0;
     end
 
 end
